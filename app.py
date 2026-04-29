@@ -49,8 +49,8 @@ LANG_STRINGS = {
         "TR": "Klinik Belirsizlik Konumlandırma"
     },
     "main_title": {
-        "ENG": "Clinical Uncertainty Positioning Tool (Myocarditis vs ACS)",
-        "TR": "Klinik Belirsizlik Konumlandırma Aracı (Miyokardit vs AKS)"
+        "ENG": "Clinical Uncertainty Positioning Tool (ACS vs Myocarditis)",
+        "TR": "Klinik Belirsizlik Konumlandırma Aracı (AKS vs Miyokardit)"
     },
     "header_input": {
         "ENG": "New Patient Input",
@@ -95,8 +95,8 @@ LANG_STRINGS = {
         "TR": "Tüm veri alanları sağlandı. Otomatik doldurma gerekmedi."
     },
     "plot_title_tsne": {
-        "ENG": "Diagnostic Landscape (Myocarditis vs ACS)",
-        "TR": "Tanısal Manzara (Miyokardit vs AKS)"
+        "ENG": "Diagnostic Landscape (ACS vs Myocarditis)",
+        "TR": "Tanısal Manzara (AKS vs Miyokardit)"
     },
     "plot_title_bar": {"ENG": "Feature-based Uncertainty", "TR": "Özellik Bazlı Belirsizlik"},
     "plot_top20": {
@@ -116,8 +116,8 @@ LANG_STRINGS = {
     "bar_xaxis": {"ENG": "Uncertainty Score", "TR": "Belirsizlik Skoru"},
     "bar_yaxis": {"ENG": "Feature", "TR": "Özellik"},
     "about_banner": {
-        "ENG": "This tool positions a new patient on the **Myocarditis vs. ACS** diagnostic landscape based on their clinical features. Enter patient data on the left and click **Calculate**.",
-        "TR": "Bu araç, klinik özellikler temelinde yeni bir hastayı **Miyokardit ve AKS** tanısal haritası üzerinde konumlandırır. Sol taraftaki forma hasta verilerini girin ve **Hesapla**'ya tıklayın."
+        "ENG": "This tool positions a new patient on the **ACS vs. Myocarditis** diagnostic landscape based on their clinical features. Enter patient data on the left and click **Calculate**.",
+        "TR": "Bu araç, klinik özellikler temelinde yeni bir hastayı **AKS ve Miyokardit** tanısal haritası üzerinde konumlandırır. Sol taraftaki forma hasta verilerini girin ve **Hesapla**'ya tıklayın."
     },
     "welcome_header": {"ENG": "About this Tool", "TR": "Araç Hakkında"},
     "welcome_info": {
@@ -127,7 +127,7 @@ LANG_STRINGS = {
     "welcome_text": {
         "ENG": """
             This tool positions a new patient within the diagnostic landscape
-            of **Grup 1 (Myocarditis) vs. Grup 2 (ACS)**
+            of **Grup 2 (ACS) vs. Grup 1 (Myocarditis)**
             based on their clinical features.
             
             1.  **Enter** the patient's data in the form on the left.
@@ -136,7 +136,7 @@ LANG_STRINGS = {
         """,
         "TR": """
             Bu araç, yeni bir hastayı klinik özelliklerine göre
-            **Grup 1 (Miyokardit) ve Grup 2 (AKS)**
+            **Grup 2 (AKS) ve Grup 1 (Miyokardit)**
             tanısal manzarası üzerinde konumlandırır.
             
             1.  Sol taraftaki forma hasta verilerini **girin**.
