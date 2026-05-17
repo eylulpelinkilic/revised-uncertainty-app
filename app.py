@@ -642,7 +642,7 @@ HISTORY_FEATURES = [
     "Alcohol", "KOAH", "PAH", "HIPERTIROIDI", "REYNAULD"
 ]
 LAB_ECG_FEATURES = [
-    "PEAK_TROP", "Troponin_Sonucu", "TROPONIN_CUTOFF_DEGERI", "TROP_KATSAYISI", "CK-MB",
+    "Troponin_Sonucu", "TROPONIN_CUTOFF_DEGERI", "TROP_KATSAYISI", "CK-MB",
     "GLUKOZ", "WBCpik", "NEUpik", "LYMPpik", "EOSpik", "MONOpik", "HB",
     "HTC", "PLT", "KREATIN", "AST", "ALT", "ALBUMIN", "TOTAL_KOLESTEROL",
     "TG", "LDL", "HDL", "hs-CRP", "hs-CRP_CUTOFF", "hs-CRP_FOLD",
@@ -655,7 +655,7 @@ LAB_ECG_FEATURES = [
 # Klinik olarak tam sayı rapor edilen numerik özellikler
 _INTEGER_FEATURES = {
     "AGE", "Any Previous Pain Attacks",
-    "PEAK_TROP", "CK-MB", "GLUKOZ", "PLT",
+    "CK-MB", "GLUKOZ", "PLT",
     "AST", "ALT", "TOTAL_KOLESTEROL", "TG", "LDL", "HDL",
 }
 
