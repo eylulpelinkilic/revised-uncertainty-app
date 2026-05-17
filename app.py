@@ -652,6 +652,10 @@ LAB_ECG_FEATURES = [
     "ECG_Q waves", "MRI_T2", "INHOSPITAL_EX", "EX_TARIHI", "BMI"
 ]
 
+# Modelden çıkarıldı ama model henüz yeniden train edilmedi;
+# model yeniden eğitilene kadar bu değerler training mean ile otomatik doldurulur.
+_PENDING_REMOVAL_FEATURES = {"PEAK_TROP": 305.07}
+
 # Klinik olarak tam sayı rapor edilen numerik özellikler
 _INTEGER_FEATURES = {
     "AGE", "Any Previous Pain Attacks",
@@ -812,6 +816,9 @@ if artifacts is not None:
                 st.warning(T("warning_all_required"))
 
         else:
+            for feat, val in _PENDING_REMOVAL_FEATURES.items():
+                if feat in feature_list:
+                    patient_data[feat] = val
             X_new_df = pd.DataFrame([patient_data])[feature_list]
             x_new_unc = model.named_steps['uncertainty'].transform(X_new_df)
             x_new_vec_raw = x_new_unc[0]
