@@ -954,7 +954,11 @@ if artifacts is not None:
             st.plotly_chart(fig_global, use_container_width=True)
 
         with st.expander(T("welcome_header"), expanded=False):
-            st.info(T("welcome_info"))
+            st.markdown(
+                f'<div style="background-color:#FFF9C4;border-left:4px solid #F9A825;padding:12px 16px;border-radius:4px;">'
+                f'{T("welcome_info")}</div>',
+                unsafe_allow_html=True
+            )
             st.markdown(T("welcome_text"), unsafe_allow_html=True)
 else:
     # Artifact'lar yüklenemezse
